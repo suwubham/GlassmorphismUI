@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --primary-color: #8b5cf6; */
+  --primary-color: #3d3854;
+  /* --secondary-color: #ec4899; */
+  --secondary-color: #554d75;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Add padding for fixed navbar */
+}
+
+/* Custom scrollbar styles for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15); /*default transparency is set to 0.15*/
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px) saturate(154%); /*default is set to 5px*/
+  -webkit-backdrop-filter: blur(18px) saturate(154%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* {'transparency': {'mean': 0.4636904761904762},
+ 'blur': {'mean': 18.863095238095237},
+ 'saturation': {'mean': 154.20833333333334},
+ 'backgroundcolor_r': {'mean': 60.57142857142857},
+ 'backgroundcolor_g': {'mean': 55.76190476190476},
+ 'backgroundcolor_b': {'mean': 83.80952380952381}} */
