@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,27 +6,30 @@
 
 :root {
   /* --primary-color: #8b5cf6; */
-  --primary-color: #3d3854;
+  /* --primary-color: #3d3854; */
   /* --secondary-color: #ec4899; */
-  --secondary-color: #554d75;
+  /* --secondary-color: #554d75; */
+  --primary-color: #a18aff;
+  --secondary-color: #923bbb;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Add padding for fixed navbar */
+  scroll-padding-top: 80px;
 }
 
-/* Custom scrollbar styles for better UI */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
+  background: #3c3849;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
+  background: #4b075a;
   border-radius: 10px;
 }
 
@@ -36,7 +39,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
@@ -48,12 +51,13 @@ body {
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.15); /*default transparency is set to 0.15*/
+  background: var(--glass-bg);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(18px) saturate(154%); /*default is set to 5px*/
-  -webkit-backdrop-filter: blur(18px) saturate(154%);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px) saturate(154%);
+  -webkit-backdrop-filter: blur(20px) saturate(154%);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
 }
 /* {'transparency': {'mean': 0.4636904761904762},
  'blur': {'mean': 18.863095238095237},
@@ -61,3 +65,9 @@ body {
  'backgroundcolor_r': {'mean': 60.57142857142857},
  'backgroundcolor_g': {'mean': 55.76190476190476},
  'backgroundcolor_b': {'mean': 83.80952380952381}} */
+
+/* bg image rgb values : 
+    1. top : #210e2d,
+    2. top layer : #520a55,
+    3. bottom layer : #a022ba
+ */

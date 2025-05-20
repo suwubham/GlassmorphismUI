@@ -1,11 +1,6 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Pricing from "./components/Pricing";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import FloatingCards from "./components/FloatingCards";
 import { useEffect } from "react";
+import {  BrowserRouter as Router  } from "react-router-dom";
+import { Layout } from "./components/Layout";
 
 function App() {
   // Add scroll observer for section animations
@@ -44,17 +39,20 @@ function App() {
     };
   }, []);
   return (
-    <div className="min-h-screen relative">
-      <FloatingCards />
-      <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <Pricing />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    // <div className="min-h-screen relative">
+    //   <FloatingCards />
+    //   <Navbar />
+    //   <main>
+    //     <Hero />
+    //     <Features />
+    //     <Pricing />
+    //     <Contact />
+    //   </main>
+    //   <Footer />
+    // </div>
+    <Router>
+      <Layout />
+    </Router>
   );
 }
 
