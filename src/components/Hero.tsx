@@ -1,4 +1,4 @@
-function Hero() {
+const Hero = () => {
   return (
     <section id="hero" className="pt-32 pb-20 px-4">
       <div className="container mx-auto flex flex-col items-center">
@@ -24,6 +24,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

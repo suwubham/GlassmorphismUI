@@ -1,4 +1,6 @@
-function FloatingCards() {
+import wave from "../assets/wave.png";
+
+const FloatingCards = () => {
   return (
     // <div className="fixed inset-0 -z-10 overflow-hidden">
     //   {/* Decorative floating elements;  */}
@@ -11,13 +13,12 @@ function FloatingCards() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('src/assets/wave.png')",
+          backgroundImage: `url(${wave})`,
         }}
       />
       <div className="absolute inset-0  bg-white/1" />
     </div>
-
   );
-}
+};
 
 export default FloatingCards;

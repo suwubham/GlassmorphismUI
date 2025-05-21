@@ -1,4 +1,4 @@
-function Pricing() {
+const Pricing = () => {
   const plans = [
     {
       name: "Basic",
@@ -95,6 +95,6 @@ function Pricing() {
       </div>
     </section>
   );
-}
+};
 
 export default Pricing;

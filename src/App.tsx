@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import {  BrowserRouter as Router  } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "./components/Layout";
 
-function App() {
+const App = () => {
   // Add scroll observer for section animations
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -54,6 +54,6 @@ function App() {
       <Layout />
     </Router>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Contact() {
+const Contact = () => {
   const navigate = useNavigate();
 
   const onSubmit = (e: { preventDefault: () => void }) => {
@@ -109,6 +109,6 @@ function Contact() {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;

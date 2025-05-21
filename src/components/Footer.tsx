@@ -1,4 +1,4 @@
-function Footer() {
+const Footer = () => {
   return (
     <footer className="glass mt-20 py-8">
       <div className="container mx-auto px-4">
@@ -55,6 +55,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
