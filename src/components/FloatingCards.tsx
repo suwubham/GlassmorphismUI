@@ -1,5 +1,3 @@
-import wave from "../assets/wave.png";
-
 const FloatingCards = () => {
   return (
     // <div className="fixed inset-0 -z-10 overflow-hidden">
@@ -13,7 +11,7 @@ const FloatingCards = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${wave})`,
+          backgroundImage: "url('/assets/wave.svg')",
         }}
       />
       <div className="absolute inset-0  bg-white/1" />
